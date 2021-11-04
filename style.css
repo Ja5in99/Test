@@ -69,3 +69,14 @@ body{
 .main-menu .menu-item:hover > .fa{
     color:rgb(255, 136, 0);
 }
+
+@media screen and ( max-width: 450px) {
+    body {
+      font-size: 10px;
+    }
+  }
+  @media screen and ( max-width: 286px) {
+    body {
+      font-size: 7px;
+    }
+  }
