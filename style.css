@@ -12,6 +12,10 @@ img{
     
 }
 
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
 body{
     background-color: #ebebeb;
     font-family: 'Oswald', Oswald-serif;
@@ -40,7 +44,12 @@ body{
     width: 270px;
 }
 
-
+.text{
+    text-align: center!important;
+    width: 60%;
+    margin: auto;
+    padding-left: 40px;
+}
 
 .main-menu .menu-item{
     padding: 10px;
@@ -60,4 +69,3 @@ body{
 .main-menu .menu-item:hover > .fa{
     color:rgb(255, 136, 0);
 }
-
