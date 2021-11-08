@@ -7,4 +7,3 @@ function delete_cookie( name, path, domain ) {
   }
 }
 
-

@@ -1,9 +1,13 @@
+
 *, body{
     margin: 0;
     padding: 0;
 }
-img{
-    margin-left:70px
+.main{
+    display: block;
+    padding-left:40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .test{
@@ -17,7 +21,7 @@ img{
   }
 
 body{
-    background-color: #ebebeb;
+    background-color: #1d212b;
     font-family: 'Oswald', Oswald-serif;
 
 }
@@ -44,13 +48,59 @@ body{
     width: 270px;
 }
 
+
 .text{
     text-align: center!important;
+    font-size:30px;
     width: 60%;
     margin: auto;
     padding-left: 40px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
+.hemsidor{
+    position: absolute;
+    right: 0px;
+    width: 70px;
+    padding: 10px;
+    bottom: 40px;
+}
+
+.Kont-test{
+    position: absolute;
+    right: 0px;
+    width: 90px;
+    padding: 10px;
+    text-align:right;
+    bottom: 8px;
+}
+
+.column {
+    float: left;
+    width: 25px;
+    padding: 5px;
+  }
+
+.hemsidor::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+.texter{
+    text-align: center!important;
+    font-size:25px;
+    width: 60%;
+    margin: auto;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+h1, p, span{
+    color:#fff;
+}
 .main-menu .menu-item{
     padding: 10px;
 }

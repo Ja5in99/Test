@@ -18,7 +18,7 @@
 <body>
     <div class="main-menu">
         <ul>
-            <a href="../" style="color:black"><li class="menu-item"><i class="fa fa-home "></i> Hem</li></a>
+            <a href="../index.html" style="color:black"><li class="menu-item"><i class="fa fa-home "></i> Hem</li></a>
             <a href="index.html" style="color:black"><li class="menu-item"><i class="fa fa-code "></i> Klienttekniker</li></a>
             <a href="../Projektmetodik/index.html" style="color:black"><li class="menu-item"><i class="fa fa-tasks "></i> Projektmetodik</li></a>
             <a href="../Internet/index.html" style="color:black"><li class="menu-item"><i class="fa fa-wifi "></i> Internet</li></a>
@@ -27,5 +27,67 @@
             <a href="../Kontakt/index.html" style="color:black"><li class="menu-item"><i class="fa fa-user-circle-o "></i> Kontakt</li></a>
         </ul>
     </div>
+    <section>
+        <div class="cards">
+    <section>
+        <div>
+    <h1>HTML, CSS OCH JAVASCRIPT
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>Scrolla ner för att läsa mer
+    </h1>
+</div>
+    </section>
+    <section>
+        <div class="container reveal">
+        <div class="text-card">
+    <img src="C:\Users\Jasin\Documents\Vscode\Skolsida\Img\130px-HTML5_logo_and_wordmark.png" alt="html" class="pictures" height="350"; width="350"> 
+    <p>
+        HTML är en förkortning av Hyper Text Markup Language och är egentligen inte ett programmeringsspråk utan en samling markeringskoder. HTML är en av webbens grundläggande byggstenar tillsammans med CSS (Cascading Style Sheets) och JavaScript. Anledningen till att HTML inte är ett programmeringsspråk är för att HTML inte kan ta emot kommandon, något som krävs i ett programmeringsspråk. Kod i HTML har endast i uppgift att ge struktur.
+    </p>
+</div>
+</section>
+<section>
+    <div class="container reveal">
+    <div class="text-card">
+    <img src="C:\Users\Jasin\Documents\Vscode\Skolsida\Img\css.png" alt="css" class="pictures" height="350"; width="350"> 
+    <p>
+        CSS är en förkortning av Cascading Style Sheets och är en av webbens tre grundläggande byggstenar. När man bygger en hemsida kan man säga att CSS är webbens ansikte utåt och sköter allt som har med design att göra. Med CSS kan man åstadkomma allt från att välja typsnitt på text till att göra snygga animationer. Precis som HTML så räknas CSS inte som ett programmeringsspråk, då det saknar möjligheten att utföra riktiga kommandon.   
+    </p>
+</div>
+</section>
+<section>
+    <div class="container reveal">
+    <div class="text-card">
+        <h1 class="js">Javascript</h1>
+    <img src="https://img.icons8.com/color/480/000000/javascript--v1.png" alt="js" class="pictures" height="350"; width="350">
+    <p>
+        När man bygger en hemsida så står HTML för strukturen, CSS för designen och JavaScript för funktionaliteten. Enkla animationer kan idag åstadkommas med hjälp av CSS, men generellt så är det JavaScript som möjliggör allt som händer på en webbplats. Om du har ett formulär på din hemsida, så kan man med hjälp av JavaScript bland annat kolla om användaren har skrivit in fel uppgifter, eller om något inmatnings fält är tomt.
+    </p>
+</section>
+
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+  var reveals = document.querySelectorAll('.reveal')
+
+  for(var i = 0; i < reveals.length; i++){
+    var windowheight = window.innerHeight;
+    var revealtop= reveals[i].getBoundingClientRect().top;
+    var revealpoint=150;
+
+    if(revealtop < windowheight - revealpoint){
+      reveals[i].classList.add('active');
+    }
+    else{
+      reveals[i].classList.remove('active');
+    }
+ }
+    }
+    </script>
+    
 </body> 
 </html>
