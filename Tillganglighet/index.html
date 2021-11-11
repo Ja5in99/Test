@@ -27,5 +27,82 @@
             <a href="../Kontakt/index.html" style="color:black"><li class="menu-item"><i class="fa fa-user-circle-o "></i> Kontakt</li></a>
         </ul>
     </div>
+    <section>
+        <div class="cards">
+    <section>
+        <div>
+    <h1>Tillgänglighet<
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>Scrolla ner för att läsa mer
+    </h1>
+</div>
+    </section>
+    <section>
+        <div class="container reveal">
+        <div class="text-card">
+            <h1>WCAG</h1>
+    <img src=".png" alt="html" class="pictures" height="350"; width="350"> 
+    <p>
+Web Content Accessibility Guidelines (WCAG) är en samling riktlinjer för att öka tillgängligheten på internet för användare med funktionssvårigheter. Framförallt är riktlinjerna fokuserade kring information såsom texter, bilder, ljud, kod och taggning som definierar strukturella objekt samt presentation av innehåll i olika former. Det kan exempelvis handla om att erbjuda textalternativ för visuella element eller att göra det enklare för besökaren på webbsidan att lyssna på sidans innehåll istället för att läsa det visuellt.
+<br>
+<br>
+Den inledande proccesen handlar om att ta reda på webbplatsens syfte och mål, därefter får man sedan värdera hur kompitabellt informationsinnehållet är i förhållande till WCAG. Arbetet sker i en dialog mellan kund och leverantör och kräver en strukturerad process för att inte missa viktiga detaljer. Generellt ska svenska myndigheter följa nivå AA, alltså den näst högsta nivån av WCAG. Forsätt ner så ser du 3 exempel på krav som måste uppfllas
+    </p>
+</div>
+</section>
+<section>
+    <div class="container reveal">
+    <div class="text-card">
+        <h1>Responsiv design
+        </h1>
+    <img src=".png" alt="css" class="pictures" height="350"; width="350"> 
+    <p>
+        Innehåll ska kunna presenteras utan att information eller funktionalitet går förlorad. Du ska kunna se och läsa sidans innehåll på en 320 x 256 pixlars skärm, vilket motsvarar ungefär bredden på en iPhone 5. Hemsidan ska inte heller behöva en horisontell skroll för att presentera allt innehåll. Dock finns det undantag för innehåll som kartor, diagram och spel.
+    </p>
+</div>
+</section>
+<section>
+    <div class="container reveal">
+    <div class="text-card">
+        <h1>Grafisk kontrast
+        </h1>
+    <img src=".png" alt="js" class="pictures" height="350"; width="350">
+    <p>
+        Grafiska objekt, så som knappar och andra kontroller, som är nödvändiga för att förstå innehåll eller funktionalitet måste ha ett minimum kontrastvärde mot omgivande färger (minst 4,5:1). Det finns en rad olika verktyg man kan använda för att testa kontrasten på sin hemsida eller app. Vill man däremot säkerställa att en hemsida eller app uppfyller kraven krävs en mer omfattande analys.
+    </p>
+</section>
+
+<section>
+    <div class="container reveal">
+    <div class="text-card">
+        <h1>Läsbarhet</h1>
+    <img src=".png" alt="js" class="pictures" height="350"; width="350">
+    <p>
+        Grafiska objekt, så som knappar och andra kontroller, som är nödvändiga för att förstå innehåll eller funktionalitet måste ha ett minimum kontrastvärde mot omgivande färger (minst 4,5:1). Det finns en rad olika verktyg man kan använda för att testa kontrasten på sin hemsida eller app. Vill man däremot säkerställa att en hemsida eller app uppfyller kraven krävs en mer omfattande analys.
+    </p>
+</section>
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+  var reveals = document.querySelectorAll('.reveal')
+
+  for(var i = 0; i < reveals.length; i++){
+    var windowheight = window.innerHeight;
+    var revealtop= reveals[i].getBoundingClientRect().top;
+    var revealpoint=150;
+
+    if(revealtop < windowheight - revealpoint){
+      reveals[i].classList.add('active');
+    }
+    else{
+      reveals[i].classList.remove('active');
+    }
+ }
+    }
+    </script>
 </body> 
 </html>

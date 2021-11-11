@@ -27,5 +27,65 @@
             <a href="../Kontakt/index.html" style="color:black"><li class="menu-item"><i class="fa fa-user-circle-o "></i> Kontakt</li></a>
         </ul>
     </div>
+    <section>
+        <div class="cards">
+    <section>
+        <div>
+    <h1>Analys
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>Scrolla ner för att läsa mer
+    </h1>
+</div>
+    </section>
+    <section>
+        <div class="container reveal">
+        <div class="text-card">
+    <img src=".png" alt="html" class="pictures" height="350"; width="350"> 
+    <p>
+    </p>
+</div>
+</section>
+<section>
+    <div class="container reveal">
+    <div class="text-card">
+    <img src=".png" alt="css" class="pictures" height="350"; width="350"> 
+    <p>
+    </p>
+</div>
+</section>
+<section>
+    <div class="container reveal">
+    <div class="text-card">
+        <h1 class="js">Javascript</h1>
+    <img src=".png" alt="js" class="pictures" height="350"; width="350">
+    <p>
+
+    </p>
+</section>
+
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+  var reveals = document.querySelectorAll('.reveal')
+
+  for(var i = 0; i < reveals.length; i++){
+    var windowheight = window.innerHeight;
+    var revealtop= reveals[i].getBoundingClientRect().top;
+    var revealpoint=150;
+
+    if(revealtop < windowheight - revealpoint){
+      reveals[i].classList.add('active');
+    }
+    else{
+      reveals[i].classList.remove('active');
+    }
+ }
+    }
+    </script>
+    
 </body> 
 </html>
