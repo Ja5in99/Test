@@ -8,7 +8,7 @@ img{
 
 
 body{
-    background-color: #ebebeb;
+    background-color: #1d212b;
     font-family: 'Oswald', Oswald-serif;
 
 }
@@ -56,174 +56,106 @@ body{
     color:rgb(255, 136, 0);
 }
 
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
+.pictures{
+    padding-left:40px;
+    padding-right: 0%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5px auto; /* 15% from the top and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+h1{
+    text-align: center!important;
+    font-size:50px;
+    width: 60%;
+    margin: auto;
+    padding-left: 40px;
+    padding-bottom: 70px;
+}
+p{
+    text-align: center!important;
+    font-size:30px;
+    width: 60%;
+    margin: auto;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
-/* The Close Button */
-.close {
-  /* Position it in the top right corner outside of the modal */
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-/* Close button on hover */
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)}
-  to {-webkit-transform: scale(1)}
-}
-
-@keyframes animatezoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
-}*, body{
-    margin: 0;
-    padding: 0;
-}
-img{
-    margin-left:70px
+.js{
+    text-align: center!important;
+    font-size:50px;
+    width: 60%;
+    margin: auto;
+    padding-left: 40px;
+    padding-top:50px;
 }
 
 
-body{
-    background-color: #ebebeb;
-    font-family: 'Oswald', Oswald-serif;
-
-}
-.main-menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 70px;
-    height: 100vh;
-
-    background-color: #fff;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    
-
-    overflow: hidden;
-    white-space: nowrap;
-    box-shadow: 0px 0px 20px #d4d4d4;
-
-    transition: .3s ease;
+section.container{
+    margin:100px;
 }
 
-.main-menu:hover{
-    width: 270px;
+section{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
 
-
-
-.main-menu .menu-item{
-    padding: 10px;
+section:nth-child(1){
+    color:#fff;
+}
+section:nth-child(2){
+    color:#fff;
+}
+section:nth-child(3){
+    color:#fff;
+}
+section:nth-child(4){
+    color:#fff;
+}
+section:nth-child(5){
+    color:#fff;
+    padding-bottom:10px;
 }
 
-.main-menu .menu-item:hover{
-    background-color: #d6d6d6;
-    cursor: pointer;
-}
- 
-.main-menu .menu-item .fa{
-    font-size: 25px;
-    width: 60px;
-    padding: 13px;
+section .container{
+    margin: 100px;
 }
 
-.main-menu .menu-item:hover > .fa{
-    color:rgb(255, 136, 0);
+sectoin .cards{
+    display:flex;
 }
 
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
+@media (max-width:908px){
+    section h1{
+        font-size:40px;
+    }
+    p{
+        font-size:20px;
+    }
 }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5px auto; /* 15% from the top and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+@media (max-width:788px){
+    section h1{
+        font-size:30px;
+    }
+
+    p{
+        font-size:10px;
+    }
 }
 
-/* The Close Button */
-.close {
-  /* Position it in the top right corner outside of the modal */
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
+.reveal{
+    position: relative;
+    transform:translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
 }
 
-/* Close button on hover */
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
+.reveal.active{
 
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)}
-  to {-webkit-transform: scale(1)}
-}
-
-@keyframes animatezoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
+    transform:translateY(0px);
+    opacity:1;
 }
