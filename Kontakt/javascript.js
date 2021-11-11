@@ -7,4 +7,6 @@ function delete_cookie( name, path, domain ) {
   }
 }
 
-
+function submitForm() {
+  alert("Skickar mail!");
+}
